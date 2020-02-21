@@ -247,12 +247,12 @@ footer {
     font-stretch: normal;
     line-height: 1.21;
     letter-spacing: normal;
-    color: #54565a;
+    color: black;
     display: flex;
     align-items: center;
     height: 50px;
     width: 100%;
-    background-color: #F6F8F9;
+    background-color: #dcdcdc;
 }
 
 .icones-rodape {
@@ -411,9 +411,9 @@ section#diferenciais {
 #header-menor {
     margin-top: 0px;
     background-color: #98ca3f;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex; /*ALINHA OS ELEMENTOS (divide o msm espaço,o msm acontece com footer-direito  esquqerdo)*/
+    flex-direction: row; /*direção do flex em formato de linha*/
+    align-items: center; /*alinhamento ao centro (centro, direita e esquerda)*/
 }
 
 #header-menor>section>img {
@@ -422,10 +422,14 @@ section#diferenciais {
 
 section#footer-direita {
     margin: auto;
+    color: #4e4f52;
+    background-color: #dcdcdc;
 }
 
 section#footer-esquerda {
     margin: auto;
+    color: #4e4f52;
+    background-color: #dcdcdc;
 }
 
 .imagem-pizza {
@@ -433,7 +437,7 @@ section#footer-esquerda {
 }
 
 #receitas {
-    display: grid;
+    display: grid; /*grade*/
     width: 60%;
     margin: auto;
     text-align: left;
@@ -456,11 +460,13 @@ section#footer-esquerda {
 .receita-2-1 {
     grid-row: 2;
     grid-column: 1;
+    /*background-color: #dcdcdc;*/
 }
 
 .receita-2-2 {
     grid-row: 2;
     grid-column: 2;
+    /*background-color: #dcdcdc;*/
 }
 
 .receita-3-1 {
