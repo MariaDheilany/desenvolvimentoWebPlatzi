@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8>"
     <title>Pizzaria Platzi</title>
     <meta name="description"
         content="Pizzaria Platzi. Sabores incomparáveis, ingredientes de alta qualidade e compromisso de entrega.">
@@ -16,26 +17,32 @@
         <nav id="header-direita">
             <a href="index.html">Home</a>
             <a href="receitas.html">Receitas</a>
-            <a href="pedido.html">Faça seu pedido</a>
+            <a class="botao-pedido" href="pedido.html">Faça seu pedido</a>
         </nav>
     </header>
 
     <section id="formulario">
-        <form class="">
-            <label class="" for="sabor">Escolha o sabor da sua pizza</label>
-            <select id="sabor" name="sabor">
-                <option value="1">Peperoni</option>
-                <option value="2">Salame</option>
-                <option value="3">Havaiana</option>
-            </select>
-            <label class="" for="tamanho">Escolha o tamanho da sua pizza</label>
-            <select id="tamanho" name="tamanho">
-                <option value="1">Pequena</option>
-                <option value="2">Média</option>
-                <option value="3">Grande</option>
-            </select>
+        <form class=""> <!--FORM: formulario, permite receber informações do teclado-->
+            <div class="sabor">
+                <label class="" for="sabor">Escolha o sabor da sua pizza</label>
+                <select id="sabor" name="sabor">
+                    <option value="1">Peperoni</option>
+                    <option value="2">Salame</option>
+                    <option value="3">Havaiana</option>
+                </select>
+            </div>
+            
+            <div class="tamanho">
+                <label class="" for="tamanho">Escolha o tamanho da sua pizza</label>
+                <select id="tamanho" name="tamanho">
+                    <option value="1">Pequena</option>
+                    <option value="2">Média</option>
+                    <option value="3">Grande</option>
+                </select>
+            </div>
+            
             <input type="text" placeholder="Insira seu endereço completo"></input>
-            <span class="input-group-addon">ícone do Pin</span>
+            <span class="input-group-addon"> <img src="./_img/imagens/pin.svg" alt="ícone do Pin"></span>
             <p class="help-block">Unicamente para Brasil</p>
         </form>
     </section>
